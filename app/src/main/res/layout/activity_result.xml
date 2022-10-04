@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Result"
+    android:background="@drawable/img_4"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="20dp">
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/result"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:textStyle="bold">
+    </TextView>
+    <ImageView
+        android:layout_width="326dp"
+        android:layout_height="300dp"
+        android:id="@+id/iv_trophy"
+        android:contentDescription="@string/images"
+        android:src ="@drawable/ic_trophy">
+    </ImageView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/congratulations"
+        android:text="@string/hey_congratulations"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp">
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_name"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        tools:text ="Username">
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvScore"
+        android:layout_marginTop="10dp"
+        android:textColor="#8d99ae"
+        android:textSize="20sp"
+        tools:text="Your score is 9 out 0f 10">
+    </TextView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_finish"
+        style="@style/Widget.Material3.Button.ElevatedButton.Icon"
+        android:textAppearance="?attr/textAppearanceLabelLarge"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#FAE89B16"
+        android:text="@string/finish"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:icon="@drawable/trophyfinish"
+        app:iconGravity = "textStart"
+        app:iconTint="#575772"
+        android:textSize="18sp">
+    </Button>
+
+
+</LinearLayout>
